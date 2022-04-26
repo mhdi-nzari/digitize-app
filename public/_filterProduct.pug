@@ -1,0 +1,37 @@
+.filterProduct.flex.flex-col.stone-bk-50.shadow-filter.fixed.bottom-0.left-0.z-30.w-full(class="p-[40px] h-auto rounded-filter  transition-all duration-700")
+	p.filterProductTitle.font-bold.orange-400(class='text-[22px]') فیلتر
+	.filterProduct--detail.flex.flex-col.gap-y-10(class='my-[21px]') 
+		.filterProduct--detail--brand.flex.flex-col
+			.filterProduct--detail--brand--wrapper.space-x-6.flex.flex-row.items-center
+				img.filterProduct--detail--brand--wrapper--icon.relative(src="./img/house.svg" alt="icon" class='ml-[15px]')
+				p.filterProduct--detail--brand--wrapper--text.font-normal.slate-800(class='text-[20px]') برند محصول
+				img(src="./img/arrow-up.svg" alt="icon" )
+			.filterProduct--detail--brand--wrapper--detail.flex.flex-col.gap-y-5(class='mt-[20px]') 
+				.filterProduct--detail--brand--wrapper--detail--item
+					label اپل
+					input(type="checkbox" name="")
+				.filterProduct--detail--brand--wrapper--detail--item
+					input(type="checkbox" name="")
+					lable سامسونگ
+				.filterProduct--detail--brand--wrapper--detail--item
+					input(type="checkbox" name="")
+					lable شیائومی
+				.filterProduct--detail--brand--wrapper--detail--item
+					input(type="checkbox" name="")
+					lable هوآوی
+		a(href="javascript:void(0)").filterProduct--detail--color.flex.flex-row.space-x-6.items-center
+			img.filterProduct--detail--brand--icon.relative(src="./img/color-swatch.svg" alt="icon" class='ml-[15px]')
+			p.filterProduct--detail--brand--text.font-normal.slate-800(class='text-[20px]') رنگ محصول
+
+			img(src="./img/arrow-up.svg" alt="icon" )
+		.filterProduct--detail--range.flex.flex-col.gap-y-5(class='mt-[20px]')
+			.filterProduct--detail--range--wrapper.flex.flex-row.space-x-6.items-center
+				img.filterProduct--detail--brand--icon.relative(src="./img/wallet.svg" alt="icon" class='ml-[15px]')
+				p.filterProduct--detail--brand--text.font-normal.slate-800(class='text-[20px]') محدوده قیمت محصول
+				img(src="./img/arrow-up.svg" alt="icon" )
+
+			.filterProduct--detail--range--detail
+				input.js-range-slider(type="text" name="my_range")
+	.filterProduct--detail--buttons(class='flex flex-row justify-between items-center mt-[36px]')
+		a.btn-orange-active(href="javascript:void(0)" class="") تایید
+		a.btn-orange-outline(href="javascript:void(0)" class="") لغو فیلتر

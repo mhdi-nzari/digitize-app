@@ -1,0 +1,26 @@
+extends ./_layout
+
+block headstyle
+
+block header
+	include ./_header
+	// The middle part of the website
+block content
+	include ./_main
+
+
+
+
+
+block footer
+	include ./_footer
+
+	// Attached links & Script Which must be loaded at the end
+block script
+
+	script(src="./js/jquery-3.6.0.min.js") 
+	script(src="./js/ion.rangeSlider.min.js") 
+	script(src="./js/alpine.min.js") 
+	script(src="./js/script.js") 
+
+

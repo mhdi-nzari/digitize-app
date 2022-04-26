@@ -1,0 +1,53 @@
+section.product--filter
+	.product--filter.flex.justify-around.gap-x-7(class=" sm:flex-row xs:flex-col  gap-y-4 ")
+		.product--filter--sort.bg-white.rounded-default.shadow-default(class=" xs:w-full sm:w-1/2")
+			a.flex.flex-row.items-center(href="javascript:void(0)" xs:justify-around sm:.justify-start)
+				.product--filter--sort--img.flex.flex-row.ml-2 
+					img.w-fit(src="./img/sort.png" alt="")
+					img.w-fit(src="./img/arrow-down.png" alt="")
+				p.product--filter--sort__text.text-one.font-medium.slate-800.text-one محبوب ترین محصول
+		.product--filter--sort.bg-white.rounded-default.shadow-default(class=" xs:w-full sm:w-1/2")
+			a.flex.flex-row.items-center(href="javascript:void(0)")  
+				.product--filter--sort--img.flex.flex-row
+					svg.ml-2(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M5.3999 2.1001H18.5999C19.6999 2.1001 20.5999 3.0001 20.5999 4.1001V6.3001C20.5999 7.1001 20.0999 8.1001 19.5999 8.6001L15.2999 12.4001C14.6999 12.9001 14.2999 13.9001 14.2999 14.7001V19.0001C14.2999 19.6001 13.8999 20.4001 13.3999 20.7001L11.9999 21.6001C10.6999 22.4001 8.8999 21.5001 8.8999 19.9001V14.6001C8.8999 13.9001 8.4999 13.0001 8.0999 12.5001L4.2999 8.5001C3.7999 8.0001 3.3999 7.1001 3.3999 6.5001V4.2001C3.3999 3.0001 4.2999 2.1001 5.3999 2.1001Z" stroke="#AFAFAF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+						path(opacity="0.4" d="M10.93 2.1001L6 10.0001" stroke="#AFAFAF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round")
+					.product--filter--sort__text.flex.flex-row
+						p.text-one.font-medium.slate-800.ml-5 فیلتر :
+						p.slate-800.text-one.font-medium.mr-1 برند اپل
+
+
+section.prdouct 
+
+	.product--wrapper.grid.grid-cols-4(class="mt-[40px]    xs: grid-cols-1  sm:grid-cols-2  gap-y-9 gap-x-3 md:grid-cols-3 lg:grid-cols-4 ")
+		each val in ['./img/1.png' , './img/2.png' , './img/1.png' , './img/2.png', './img/1.png' , './img/2.png']
+			figure.product--wrapper--item.rounded-item.px-4.py-4.w-full
+				a.inline-block.w-full.rounded-item.relative(href="javascript:void(0)" class=" p-2" ).product--wrapper-link.slate-bk-200
+					img.m-auto(src=val, alt="" class="w-32 h-60")
+					img(src="./img/Love.png" alt="" class="p-1.5").w-12.h-12.gray-bk-300.heart.absolute.top-5.right-5.rounded-full 
+
+
+				figcaption.product--wrapper--caption.mt-6(class="") 
+					.product--wrapper--caption--brand.flex.flex-row.items-center.justify-between 
+						p(class="text-[13px]").product--wrapper--caption--brand__text.slate-800.font-medium اپل
+						ul.product--wrapper--caption--color.flex.flex-row.ml-3 					
+
+							li(class="-ml-3.5").product--wrapper--caption--color__item.w-8.h-8.rounded-full.bg-white.shadow-default.curser-pointer
+							li(class="-ml-3.5").product--wrapper--caption--color__item.w-8.h-8.rounded-full.orange-bk-400.shadow-default.curser-pointer
+							li(class="-ml-3.5").product--wrapper--caption--color__item.w-8.h-8.rounded-full.yellow-bk-400.shadow-default.curser-pointer
+							li(class="-ml-3.5").product--wrapper--caption--color__item.w-8.h-8.rounded-full.indigo-bk-600.shadow-default.curser-pointer
+							li(class="-ml-3.5").product--wrapper--caption--color__item.w-8.h-8.rounded-full.orange-bk-300.shadow-default.curser-pointer.ring-2.ring-slate-500
+					.product--wrapper--caption--detail 
+						p.product--wrapper--caption--detail__title.font-medium.slate-900.text-one.mt-5  ساعت هوشمند اپل سری 6	
+						.product--wrapper--caption--detail__price.w-full.my-5.text-left 	
+							span.product--wrapper--caption--detail__price_one.orange-700.font-medium(class="text-[17px]") 48،250،000
+							span.product--wrapper--caption--detail__price_text.orange-700.font-medium.mr-1(class="text-[14px]")  تومان
+
+					.wrapper-line.w-64.h-1.bg-gray-300.my-4.m-auto.rounded-md
+
+					a(href="javascript:void(0)").mt-1.orange-400.font-bold.text-one.text-center.block مشاهده و سفارش 
+
+include ./_filterProduct
+
+include ./_navBarMobile
+
