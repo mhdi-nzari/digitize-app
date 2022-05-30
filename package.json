@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.1",
+    "@tailwindcss/line-clamp": "^0.4.0",
     "autoprefixer": "^10.4.4",
     "node-sass": "^7.0.1",
     "postcss-cli": "^9.1.0",
@@ -155,7 +157,9 @@
   },
   "scripts": {
     "dev": "postcss ./src/css/tailwind.css -o ./public/css/style.css --watch",
-    "sass": " sass -w --update --source-map -c --verbose .:."
+    "prod": "npx tailwindcss ./src/css/tailwind.css -o ./public/css/style.css --minify",
+    "sass": " sass -w --update --source-map -c --verbose .:.",
+    "pug": "pug -w -P . -o ."
   },
   "keywords": [],
   "author": "",

@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './ion.rangeSlider.min');
+@import "./ion.rangeSlider.min";
 
 $shadow--default: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
 html {
@@ -48,7 +48,7 @@ html {
   }
 
   .slate-700 {
-    color: #222f5d;
+    color: rgba(34, 47, 93, 0.63);
   }
 
   .slate-200 {
@@ -122,7 +122,7 @@ html {
   }
 
   .slate-bk-700 {
-    background-color: #222f5d;
+    background-color: rgba(34, 47, 93, 0.63);
   }
 
   .slate-bk-200 {
@@ -189,6 +189,18 @@ html {
   }
   .btn-orange-outline {
     @apply rounded-default orange-bk-200 text-center px-[64px] py-[12px] orange-400 ring-2 ring-orange-600  font-medium text-[24px];
+  }
+
+  .addTocart {
+    @apply rounded-default orange-bk-400 text-white font-bold text-20 items-center  m-auto px-10 py-4;
+  }
+
+  .product--item--caption--item {
+    @apply rounded-item shadow-default py-10 bg-white flex flex-col gap-y-5  px-[70px];
+  }
+
+  .selector span.active {
+    @apply bg-white py-3   rounded-full h-full slate-800 font-bold  transition-all;
   }
 }
 
